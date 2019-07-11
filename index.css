@@ -1,14 +1,14 @@
 /* Global Styles */
 
 * {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     font-family: "Josefin Sans", "sans-serif";
 }
 body {
     display: grid;
-    /* height: 100vh; */
-    margin: 0;
-    /* background-color: black; */
+    
+    margin: auto;
+    background-color: black;
 }
 a, a:visited {
     text-decoration: none;
@@ -20,9 +20,9 @@ li {
 }
 
 
-.container {
+/* .container {
     display: grid;
-}
+} */
 
 .fas {
     background-color: #FBFBFB;
@@ -45,51 +45,49 @@ h3 {
 }
 
 .lang {
-    /* display: inline-flex; */
+    
     border: 1px solid #FBFBFB;
     background-color: #1C1E26;
     color: #FBFBFB;
     width: 35px;
-    /* justify-content: flex-end; */
     
 }
 
 
 .logo {
     display: grid;
-    height: 100vh;
-    grid-template-rows: 20px 1fr 20px;
-    /* grid-template-columns: 20px 1fr 20px; */
-    grid-template-areas: "top middle bottom";
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-#logo_butt {
-    display: inline-block;
-    position: absolute;
+.logo_butt  {
+    display: flex;
+    position: relative;
     background-color: #1C1E26;
     color: #FBFBFB;
-    /* grid-area: bottom; */
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    bottom: -6%;
+    bottom: -195px;
     z-index: 1;
     margin: auto;
-    font-size: 2rem;
+    font-size: 1rem;
+    grid-column-start: 1; 
 }
 
 .design_butt {
-    display: inline-block;
-    position: absolute;
+    display: flex;
+    position: relative;
     background-color: #FBFBFB;
     color: #1C1E26;
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    bottom: -106%;
+    bottom: 0;
     z-index: 1;
     margin: auto;
-    place-content: center;
+    
 }
 
 
@@ -109,19 +107,21 @@ h3 {
 
 .dev_tab {
     display: grid;
+    position: absolute;
     background-color: #A4AEAF;
     text-align: right;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    width: 100vw;
     place-items: center;
 }
 
-.dev_info, .design_info {
+/* .dev_info, .design_info {
     text-align: left;
     place-items: center;
     width: 40vw;
     line-height: 1.6rem;
-}
+} */
 
 .dev_info h3, .design_info h3 {
     text-align: center;
@@ -134,6 +134,7 @@ h3 {
     place-items: center;
     line-height: 1.6rem;
     height: 100vh;
+    width: 100vw;
 }
 
 
@@ -141,18 +142,23 @@ h3 {
 .portfolio_link {
     display: grid;
     height: 100vh;
+    /* border: 1px solid #FBFBFB; */
 }
 
 .port_box  {
     border: 1px solid #FBFBFB;
     place-items: center;
-    margin: 20%;
+    margin: auto 10%;
     padding: 10px;
+    display: grid;
 }
 
 .dribble_button {
     background-color: #1C1E26;
     color: #FBFBFB;
+    padding: 20px;
+    display: grid;
+    font-size: 12px;
 }
 
 .plus_button {
