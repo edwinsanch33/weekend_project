@@ -1,8 +1,9 @@
 /* Global Styles */
-
-*{
-  /* border: 1px dotted blue; */
-}
+ img {
+   height: 300px;
+   width: 300px;
+   background-blend-mode: inherit;
+ }
 button {
   border-color: transparent;
 }
